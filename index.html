@@ -351,7 +351,7 @@ html.js.motore-ko #nomotore{display:block}
 <div class="card"><h3>Limiti per questo paziente</h3><ul class="lista" id="limiti"></ul></div>
 
 <div class="foot">
-  <strong>Fonte.</strong> Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. <em>Eur Heart J</em> 2023;44:3720–3826, doi:10.1093/eurheartj/ehad191, e il suo Supplementary data — antiaggreganti e anticoagulanti (Rec. Table 5, p. 3758; Rec. Table 5 continua, p. 3759), schema per scenario (Fig. 10, p. 3755), anticoagulanti nella PCI primaria e HIT (p. 3754), pazienti senza riperfusione (p. 3762), dosi (Tab. 6, p. 3751), strategie contro il sanguinamento e anticoagulante orale (Tab. 7, p. 3760), dosi nella malattia renale cronica (Suppl., Tab. S15, p. 29). Cangrelor: scheda tecnica di Kengrexal (EMA), letta il 01/10/2026. Ogni numero mostrato porta la pagina.<br><br>
+  <strong>Fonte.</strong> Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. <em>Eur Heart J</em> 2023;44:3720–3826, doi:10.1093/eurheartj/ehad191, e il suo Supplementary data — antiaggreganti e anticoagulanti (Rec. Table 5, p. 3758; Rec. Table 5 continua, p. 3759), schema per scenario (Fig. 10, p. 3755), anticoagulanti nella PCI primaria e HIT (p. 3754), pazienti senza riperfusione (p. 3762), dosi (Tab. 6, p. 3751), strategie contro il sanguinamento e anticoagulante orale (Tab. 7, p. 3760), dosi nella malattia renale cronica (Suppl., Tab. S15, p. 29). Cangrelor: scheda tecnica (EMA), letta il 01/10/2026. Ogni numero mostrato porta la pagina.<br><br>
   Strumento personale di studio e consultazione: <strong>non sostituisce il giudizio clinico né la scheda tecnica del farmaco</strong>. Non salva i dati e non li invia in rete.
 </div>
 </div>
@@ -389,7 +389,7 @@ html.js.motore-ko #nomotore{display:block}
   function r0(x) { return Math.round(x); }
 
   // Cockcroft-Gault sul peso REALE, che decide (decisione del medico del 03/10/2026:
-  // la fonte nomina la formula ma non il peso; l'etichetta FDA di Xarelto 06/2025 e
+  // la fonte nomina la formula ma non il peso; l'etichetta FDA di rivaroxaban 06/2025 e
   // il consensus NHS England 2018 dicono il reale). Con BMI >=30 accanto la clearance
   // sul peso aggiustato (ideale di Devine + 0,4 x eccesso), piu' accurata nell'obeso
   // secondo la UK Kidney Association 2025, e l'avviso se fra le due passa una soglia.
@@ -727,7 +727,7 @@ html.js.motore-ko #nomotore{display:block}
     var lim = [];
     lim.push("Durata della DAPT, triplice, de-escalation e monoterapia: Tool DAPT. Qui finisce la fase acuta.");
     lim.push("Lo STEMI trattato con la fibrinolisi ha le sue dosi nel Tool Riperfusione.");
-    lim.push("Clearance di Cockcroft-Gault sul peso reale, che decide: la linea guida nomina la formula ma non il peso, l'etichetta FDA di Xarelto (2025) e il consensus NHS England 2018 dicono il reale. Con BMI ≥30 accanto quella sul peso aggiustato (peso ideale di Devine + 0,4 × l'eccesso), più accurata nell'obeso secondo la UK Kidney Association 2025: se fra le due passa una soglia, la scelta è clinica. Le dosi restano sul peso reale.");
+    lim.push("Clearance di Cockcroft-Gault sul peso reale, che decide: la linea guida nomina la formula ma non il peso, l'etichetta FDA di rivaroxaban (2025) e il consensus NHS England 2018 dicono il reale. Con BMI ≥30 accanto quella sul peso aggiustato (peso ideale di Devine + 0,4 × l'eccesso), più accurata nell'obeso secondo la UK Kidney Association 2025: se fra le due passa una soglia, la scelta è clinica. Le dosi restano sul peso reale.");
     if (cl.clcr !== null && s.alt === null) lim.push("Altezza non indicata: il BMI non si calcola, e accanto alla clearance sul peso reale manca quella sul peso aggiustato, che nell'obeso è più bassa.");
     lim.push("L'alto rischio emorragico lo valuta chi compila, con i criteri ARC-HBR (Suppl., sezione 8.2.2.3).");
     lim.push("L'«anziano» per il clopidogrel ha confini diversi negli studi, fra 70 e 80 anni" + pgs(R5b) + ": lo strumento lo propone dai 70, insieme alla fragilità che solo il clinico vede.");
